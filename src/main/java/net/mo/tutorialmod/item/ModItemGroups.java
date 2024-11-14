@@ -27,6 +27,9 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+                        entries.add(ModBlocks.PINK_GARNET_ORE);
+                        entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+
 
                     }).build());
     public static final ItemGroup Swords_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -36,6 +39,24 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.ZACHATTACK);
                         entries.add(ModItems.SOCKSSOCK);
+
+                    }).build());
+ public static final ItemGroup MAGIC_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TutorialMod.MOD_ID, "magic_group"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.CHISEL))
+                    .displayName(Text.translatable("itemgroup.tutorialmod.magic_group"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.CHISEL);
+                        entries.add(ModBlocks.MAGIC_BLOCK);
+                        entries.add(ModItems.STARLIGHT_ASHES);
+
+                    }).build());
+ public static final ItemGroup FOOD = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TutorialMod.MOD_ID, "food"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.CAULIFLOWER))
+                    .displayName(Text.translatable("itemgroup.tutorialmod.food"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.CAULIFLOWER);
 
                     }).build());
 

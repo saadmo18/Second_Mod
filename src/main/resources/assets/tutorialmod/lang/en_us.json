@@ -2,14 +2,30 @@
   "item.tutorialmod.pink_garnet": "Pink Garnet",
   "item.tutorialmod.raw_pink_garnet": "Raw Pink Garnet",
   "item.tutorialmod.socks_sock": "Socks Sock",
-  "item.tutorialmod.zach_attack": "Zack Attack",
+  "item.tutorialmod.zach_attack": "Zach Attack",
+  "item.tutorialmod.chisel": "Chisel",
+  "item.tutorialmod.cauliflower": "Cauliflower",
+  "item.tutorialmod.starlight_ashes": "Starlight Ashes",
 
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
   "block.tutorialmod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
+  "block.tutorialmod.pink_garnet_ore": "Pink Garnet Ore",
+  "block.tutorialmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
+  "block.tutorialmod.magic_block": "Magic Block",
+
+
+
 
   "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks",
-  "itemgroup.tutorialmod.swords_blocks": "Custom Swords"
+  "itemgroup.tutorialmod.magic_group": "Magic Group",
+  "itemgroup.tutorialmod.swords_blocks": "Custom Swords",
+  "itemgroup.tutorialmod.food": "Food",
 
+  "tooltip,tutorialmod.magic.block.tooltip": "§b§n§oThis Block is Diddy yar§r§r§r",
+  "tooltip,tutorialmod.magic.block.tooltip.2": "§b§n§oThis Block is Oily§r§r§r",
+  "tooltip.tutorialmod.chisel": "Press Shift for more Information!",
+  "tooltip.tutorialmod.chiselshift_down": "This item is cool item!",
+  "tooltip.tutorialmod.cauliflower": "YUMMY!"
 }
