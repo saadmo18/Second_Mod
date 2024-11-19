@@ -6,6 +6,19 @@
   "item.tutorialmod.chisel": "Chisel",
   "item.tutorialmod.cauliflower": "Cauliflower",
   "item.tutorialmod.starlight_ashes": "Starlight Ashes",
+  "item.tutorialmod.lavya_sword": "Lavya Sword",
+  "item.tutorialmod.pink_garnet_axe": "Pink Garnet Axe",
+  "item.tutorialmod.pink_garnet_sword": "Pink Garnet Sword",
+  "item.tutorialmod.pink_garnet_shovel": "Pink Garnet Shovel",
+  "item.tutorialmod.pink_garnet_pickaxe": "Pink Garnet PickAxe",
+  "item.tutorialmod.pink_garnet_hoe": "Pink Garnet Hoe",
+  "item.tutorialmod.pink_garnet_hammer": "Pink Garnet Hammer",
+  "item.tutorialmod.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.tutorialmod.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.tutorialmod.pink_garnet_leggings": "Pink Garnet Leggings",
+  "item.tutorialmod.pink_garnet_boots": "Pink Garnet Boots",
+  "item.tutorialmod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
+  "item.tutorialmod.mo_bow": "Mo Bow",
 
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
@@ -13,15 +26,42 @@
   "block.tutorialmod.pink_garnet_ore": "Pink Garnet Ore",
   "block.tutorialmod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
   "block.tutorialmod.magic_block": "Magic Block",
+  "block.tutorialmod.damn": "16",
+  "block.tutorialmod.damn32": "32",
+  "block.tutorialmod.damn64": "64",
+  "block.tutorialmod.damn128": "128",
+  "block.tutorialmod.damn256": "256",
+  "block.tutorialmod.damn512": "512",
+  "block.tutorialmod.damn5122": "5122",
+  "block.tutorialmod.saad": "Saad Bhai",
+  "block.tutorialmod.huzi": "§b§n§oHuzi MOTU§r§r§r",
+  "block.tutorialmod.asad": "Qureshi Bhai",
+  "block.tutorialmod.sahaj": "Jeyni",
+  "block.tutorialmod.gang": "Group Photo",
+
+  "block.tutorialmod.pink_garnet_stairs": "Pink Garnet Stairs",
+  "block.tutorialmod.pink_garnet_slab": "Pink Garnet Slab",
+
+  "block.tutorialmod.pink_garnet_button": "Pink Garnet Button",
+  "block.tutorialmod.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
+
+  "block.tutorialmod.pink_garnet_fence": "Pink Garnet Fence",
+  "block.tutorialmod.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
+  "block.tutorialmod.pink_garnet_wall": "Pink Garnet Wall",
+
+  "block.tutorialmod.pink_garnet_door": "Pink Garnet Door",
+  "block.tutorialmod.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+  "block.tutorialmod.pink_garnet_lamp": "Pink Garnet Lamp",
+  "block.tutorialmod.lucky_block": "Lucky Block",
 
 
+  "enchantment.tutorialmod.lightning_striker": "Lightning Striker",
 
 
   "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
   "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks",
   "itemgroup.tutorialmod.magic_group": "Magic Group",
-  "itemgroup.tutorialmod.swords_blocks": "Custom Swords",
-  "itemgroup.tutorialmod.food": "Food",
+  "itemgroup.tutorialmod.pictures": "Pics",
 
   "tooltip,tutorialmod.magic.block.tooltip": "§b§n§oThis Block is Diddy yar§r§r§r",
   "tooltip,tutorialmod.magic.block.tooltip.2": "§b§n§oThis Block is Oily§r§r§r",

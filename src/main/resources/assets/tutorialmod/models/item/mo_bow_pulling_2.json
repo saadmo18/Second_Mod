@@ -1,0 +1,6 @@
+{
+  "parent": "tutorialmod:item/mo_bow",
+  "textures": {
+    "layer0": "tutorialmod:item/mo_bow_pulling_2"
+  }
+}
