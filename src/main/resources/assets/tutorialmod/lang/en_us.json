@@ -19,6 +19,23 @@
   "item.tutorialmod.pink_garnet_boots": "Pink Garnet Boots",
   "item.tutorialmod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
   "item.tutorialmod.mo_bow": "Mo Bow",
+  "item.tutorialmod.kabira_music_disc": "§3Kabira",
+  "item.tutorialmod.kabira_music_disc.desc": "§4Depression",
+
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+  "item.minecraft.potion.effect.depression_potion": "Depression Potion",
+  "item.minecraft.splash_potion.effect.depression_potion": "Depression Splash Potion",
+  "item.minecraft.lingering_potion.effect.depression_potion": "Depression Lingering Potion",
+
+
+  "painting.tutorialmod.world.title": "World",
+  "painting.tutorialmod.world.author": "NanoAttack",
+  "painting.tutorialmod.shrimp.title": "Shrimp",
+  "painting.tutorialmod.shrimp.author": "NanoAttack",
+  "painting.tutorialmod.saw_them.title": "Saw Them",
+  "painting.tutorialmod.saw_them.author": "NanoAttack",
 
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
@@ -52,6 +69,7 @@
   "block.tutorialmod.pink_garnet_door": "Pink Garnet Door",
   "block.tutorialmod.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
   "block.tutorialmod.pink_garnet_lamp": "Pink Garnet Lamp",
+  "block.tutorialmod.mo_chest": "Mo Chest",
   "block.tutorialmod.lucky_block": "Lucky Block",
 
 
@@ -62,10 +80,15 @@
   "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks",
   "itemgroup.tutorialmod.magic_group": "Magic Group",
   "itemgroup.tutorialmod.pictures": "Pics",
+  "itemgroup.tutorialmod.music": "Bollywood Music",
 
   "tooltip,tutorialmod.magic.block.tooltip": "§b§n§oThis Block is Diddy yar§r§r§r",
   "tooltip,tutorialmod.magic.block.tooltip.2": "§b§n§oThis Block is Oily§r§r§r",
   "tooltip.tutorialmod.chisel": "Press Shift for more Information!",
   "tooltip.tutorialmod.chiselshift_down": "This item is cool item!",
-  "tooltip.tutorialmod.cauliflower": "YUMMY!"
+  "tooltip.tutorialmod.cauliflower": "YUMMY!",
+
+  "effect.tutorialmod.slimey": "Slimey",
+  "effect.tutorialmod.depression": "Depression"
+
 }

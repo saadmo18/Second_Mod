@@ -33,6 +33,7 @@ public class ModModelProvider extends FabricModelProvider {
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAAD);
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAHAJ);
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HUZI);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GANG);
 
 
 
@@ -80,6 +81,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_BOOTS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE));
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.KABIRA_MUSIC_DISC, Models.GENERATED);
 
 
     }

@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.tutorialmod.kabira_music_disc.desc"
+  },
+  "length_in_seconds": 253.0,
+  "sound_event": "tutorialmod:kabira"
+}

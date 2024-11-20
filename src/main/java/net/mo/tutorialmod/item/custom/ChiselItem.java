@@ -19,6 +19,7 @@ import net.minecraft.world.World;
 import net.mo.tutorialmod.block.ModBlocks;
 import net.mo.tutorialmod.component.ModDataComponentTypes;
 import net.mo.tutorialmod.item.ModItems;
+import net.mo.tutorialmod.sound.ModSounds;
 
 import java.util.List;
 import java.util.Map;
@@ -51,7 +52,7 @@ public class ChiselItem extends Item {
                 context.getStack().damage(1,((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
-                world.playSound(null, context.getBlockPos(), SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS);
+                world.playSound(null, context.getBlockPos(), ModSounds.CHISEL_USE, SoundCategory.BLOCKS);
 
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }

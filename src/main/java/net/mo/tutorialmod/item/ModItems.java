@@ -9,9 +9,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mo.tutorialmod.TutorialMod;
+import net.mo.tutorialmod.block.custom.MoBow;
 import net.mo.tutorialmod.item.custom.ChiselItem;
 import net.mo.tutorialmod.item.custom.HammerItem;
 import net.mo.tutorialmod.item.custom.ModArmorItem;
+import net.mo.tutorialmod.sound.ModSounds;
 
 import java.util.List;
 
@@ -74,7 +76,9 @@ public class ModItems {
             new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
 
     public static final Item MO_BOW = registerItem("mo_bow",
-            new BowItem(new Item.Settings().maxDamage(5000)));
+            new MoBow(new Item.Settings().maxDamage(5000)));
+    public static final Item KABIRA_MUSIC_DISC = registerItem("kabira_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.KABIRA_KEY).maxCount(1)));
 
 
 

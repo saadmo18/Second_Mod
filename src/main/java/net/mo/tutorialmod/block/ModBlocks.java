@@ -1,7 +1,9 @@
 package net.mo.tutorialmod.block;
 
+import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -13,6 +15,7 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.mo.tutorialmod.TutorialMod;
 import net.mo.tutorialmod.block.custom.MagicBlock;
 import net.mo.tutorialmod.block.custom.PinkGarnetLampBlock;
+import net.mo.tutorialmod.sound.ModSounds;
 
 public class ModBlocks {
 
@@ -28,7 +31,7 @@ public class ModBlocks {
                     AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
     public static final Block MAGIC_BLOCK = registerBlock("magic_block",
-            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
             new StairsBlock(ModBlocks.PINK_GARNET_BLOCK.getDefaultState(),
@@ -56,6 +59,7 @@ public class ModBlocks {
             new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
     public static final Block PINK_GARNET_TRAPDOOR = registerBlock("pink_garnet_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+
 
     public static final Block PINK_GARNET_LAMP =registerBlock("pink_garnet_lamp",
             new PinkGarnetLampBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().luminance(state -> state.get(PinkGarnetLampBlock.CLICKED) ? 15 : 5)));

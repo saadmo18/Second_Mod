@@ -3,6 +3,7 @@ package net.mo.tutorialmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -87,6 +88,15 @@ public class ModItemGroups {
                         entries.add(ModBlocks.SAHAJ);
                         entries.add(ModBlocks.HUZI);
                         entries.add(ModBlocks.GANG);
+
+                    }).build());
+ public static final ItemGroup MUSIC = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TutorialMod.MOD_ID, "music"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(Items.MUSIC_DISC_5))
+                    .displayName(Text.translatable("itemgroup.tutorialmod.music"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.KABIRA_MUSIC_DISC);
+
 
                     }).build());
 
