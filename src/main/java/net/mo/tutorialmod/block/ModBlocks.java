@@ -2,8 +2,12 @@ package net.mo.tutorialmod.block;
 
 import com.mojang.serialization.MapCodec;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.block.entity.ChestBlockEntity;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -94,8 +98,76 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
     public static final Block GANG = registerBlock("gang",
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block HAFI = registerBlock("hafi",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block HAFI1 = registerBlock("hafi1",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block HAFI2 = registerBlock("hafi2",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MALEEHA = registerBlock("maleeha",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MALEEHA2 = registerBlock("maleeha2",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MALEEHA3 = registerBlock("maleeha3",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block ARHAM = registerBlock("arham",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block ARHAM2 = registerBlock("arham2",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block PRABH = registerBlock("prabh",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MAZIA = registerBlock("mazia",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MAZIA2 = registerBlock("mazia2",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MAZIA3 = registerBlock("mazia3",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MAZIA4 = registerBlock("mazia4",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block JANI = registerBlock("jani",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
 
+    public static final Block MOAIZ = registerBlock("moaiz",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MOAIZ2 = registerBlock("moaiz2",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MOAIZ3 = registerBlock("moaiz3",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MOAIZ4 = registerBlock("moaiz4",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MAZIA5 = registerBlock("moaiz5",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
+
+            public static final Block MO = registerBlock("mo",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MOBUZZ = registerBlock("mobuzz",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MOHOT = registerBlock("mohot",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block FATPHAM = registerBlock("fatpham",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block OWAIS = registerBlock("owais",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block TAHA = registerBlock("taha",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MOHAYDEN = registerBlock("mohayden",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
+
+    public static final Block SOHAIB = registerBlock("sohaib",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block EBADTAHA = registerBlock("ebadtaha",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+    public static final Block MO_CHEST = registerBlock("mo_chest",
+
+            new ChestBlock(
+                    AbstractBlock.Settings.create().mapColor(MapColor.OAK_TAN).instrument(NoteBlockInstrument.BASS).strength(2.5F).sounds(BlockSoundGroup.WOOD).burnable(),
+                    () -> BlockEntityType.CHEST
+            ));
+
+       
 
 
     private  static  Block registerBlock(String name, Block block){
@@ -117,5 +189,6 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {fabricItemGroupEntries.add(ModBlocks.PINK_GARNET_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
         });
+
     }
 }

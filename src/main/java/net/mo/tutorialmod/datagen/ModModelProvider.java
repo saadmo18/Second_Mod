@@ -9,6 +9,8 @@ import net.mo.tutorialmod.block.ModBlocks;
 import net.mo.tutorialmod.block.custom.PinkGarnetLampBlock;
 import net.mo.tutorialmod.item.ModItems;
 
+import java.util.Optional;
+
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -34,6 +36,38 @@ public class ModModelProvider extends FabricModelProvider {
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAHAJ);
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HUZI);
     blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GANG);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HAFI);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HAFI1);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HAFI2);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MALEEHA);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MALEEHA2);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MALEEHA3);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ARHAM);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ARHAM2);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PRABH);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAZIA);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAZIA2);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAZIA3);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAZIA4);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.JANI);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SOHAIB);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EBADTAHA);
+
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOAIZ);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOAIZ2);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOAIZ3);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOAIZ4);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAZIA5);
+
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TAHA);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MO);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOBUZZ);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOHOT);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MOHAYDEN);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OWAIS);
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FATPHAM);
+
+    blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MO_CHEST);
 
 
 
@@ -49,6 +83,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     blockStateModelGenerator.registerDoor(ModBlocks.PINK_GARNET_DOOR);
     blockStateModelGenerator.registerTrapdoor(ModBlocks.PINK_GARNET_TRAPDOOR);
+
 
     Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.PINK_GARNET_LAMP, blockStateModelGenerator.modelCollector);
     Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.PINK_GARNET_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
@@ -83,6 +118,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.KABIRA_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PORCUPINE_SPAWN_EGG,
+                new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.TEST_SPAWN_EGG,
+                new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.BLUESHEEP_SPAWN_EGG,
+                new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
 
 
     }

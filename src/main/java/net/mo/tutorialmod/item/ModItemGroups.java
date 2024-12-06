@@ -69,12 +69,57 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_HAMMER );
                         entries.add(ModBlocks.LUCKY_BLOCK);
                         entries.add(ModItems.MO_BOW);
+                        entries.add(ModItems.PORCUPINE_SPAWN_EGG);
+                        entries.add(ModItems.TEST_SPAWN_EGG);
+                        entries.add(ModItems.BLUESHEEP_SPAWN_EGG);
 
                     }).build());
  public static final ItemGroup PICTURES = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.MOD_ID, "pictures"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.DAMN128))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.MALEEHA))
                     .displayName(Text.translatable("itemgroup.tutorialmod.pictures"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.DAMN5122);
+                        entries.add(ModBlocks.SAAD);
+                        entries.add(ModBlocks.ASAD);
+                        entries.add(ModBlocks.SAHAJ);
+                        entries.add(ModBlocks.HUZI);
+                        entries.add(ModBlocks.GANG);
+                        entries.add(ModBlocks.MALEEHA);
+                        entries.add(ModBlocks.MALEEHA2);
+                        entries.add(ModBlocks.MALEEHA3);
+                        entries.add(ModBlocks.ARHAM);
+                        entries.add(ModBlocks.ARHAM2);
+                        entries.add(ModBlocks.PRABH);
+                        entries.add(ModBlocks.MAZIA);
+                        entries.add(ModBlocks.MAZIA2);
+                        entries.add(ModBlocks.MAZIA3);
+                        entries.add(ModBlocks.MAZIA4);
+                        entries.add(ModBlocks.MAZIA5);
+                        entries.add(ModBlocks.JANI);
+                        entries.add(ModBlocks.SOHAIB);
+                        entries.add(ModBlocks.EBADTAHA);
+                        entries.add(ModBlocks.HAFI);
+                        entries.add(ModBlocks.TAHA);
+                        entries.add(ModBlocks.OWAIS);
+                        entries.add(ModBlocks.MO);
+                        entries.add(ModBlocks.MOHAYDEN);
+                        entries.add(ModBlocks.MOHOT);
+                        entries.add(ModBlocks.FATPHAM);
+                        entries.add(ModBlocks.MOBUZZ);
+                        entries.add(ModBlocks.HAFI1);
+                        entries.add(ModBlocks.HAFI2);
+                        entries.add(ModBlocks.MOAIZ);
+                        entries.add(ModBlocks.MOAIZ2);
+                        entries.add(ModBlocks.MOAIZ3);
+                        entries.add(ModBlocks.MOAIZ4);
+
+
+                    }).build());
+    public static final ItemGroup QUALITYTEST = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TutorialMod.MOD_ID, "qualitytest"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.DAMN128))
+                    .displayName(Text.translatable("itemgroup.tutorialmod.qualitytest"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.DAMN);
                         entries.add(ModBlocks.DAMN32);
@@ -83,14 +128,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DAMN256);
                         entries.add(ModBlocks.DAMN512);
                         entries.add(ModBlocks.DAMN5122);
-                        entries.add(ModBlocks.SAAD);
-                        entries.add(ModBlocks.ASAD);
-                        entries.add(ModBlocks.SAHAJ);
-                        entries.add(ModBlocks.HUZI);
-                        entries.add(ModBlocks.GANG);
-
                     }).build());
- public static final ItemGroup MUSIC = Registry.register(Registries.ITEM_GROUP,
+
+
+    public static final ItemGroup MUSIC = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.MOD_ID, "music"),
             FabricItemGroup.builder().icon(() -> new ItemStack(Items.MUSIC_DISC_5))
                     .displayName(Text.translatable("itemgroup.tutorialmod.music"))

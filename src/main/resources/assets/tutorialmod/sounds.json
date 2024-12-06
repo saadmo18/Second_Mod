@@ -42,5 +42,11 @@
         "steam": true
       }
     ]
+  },
+  "channa": {
+    "subtitle": "sounds.tutorialmod.channa",
+    "sounds": [
+      "tutorialmod:channa"
+    ]
   }
 }

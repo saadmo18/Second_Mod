@@ -9,7 +9,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.mo.tutorialmod.TutorialMod;
+import net.mo.tutorialmod.block.custom.MagicBlock;
 import net.mo.tutorialmod.block.custom.MoBow;
+import net.mo.tutorialmod.entity.ModEntities;
 import net.mo.tutorialmod.item.custom.ChiselItem;
 import net.mo.tutorialmod.item.custom.HammerItem;
 import net.mo.tutorialmod.item.custom.ModArmorItem;
@@ -79,6 +81,12 @@ public class ModItems {
             new MoBow(new Item.Settings().maxDamage(5000)));
     public static final Item KABIRA_MUSIC_DISC = registerItem("kabira_music_disc",
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.KABIRA_KEY).maxCount(1)));
+    public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
+            new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new Item.Settings()));
+    public static final Item TEST_SPAWN_EGG = registerItem("test_spawn_egg",
+            new SpawnEggItem(ModEntities.TEST, 16499171, 10890612, new Item.Settings()));
+    public static final Item BLUESHEEP_SPAWN_EGG = registerItem("bluesheep_spawn_egg",
+            new SpawnEggItem(ModEntities.BLUESHEEP, 0xa86518, 0x3b260f, new Item.Settings()));
 
 
 
@@ -89,7 +97,7 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
     }
 
-    public static void reigsterModItems(){
+    public static void registerModItems(){
         TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(SOCKSSOCK);
@@ -116,9 +124,8 @@ ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(fabricItemGroupEn
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(PINK_GARNET);
-        }
+        });
 
-        );
 
 
     }
